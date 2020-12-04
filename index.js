@@ -1,20 +1,14 @@
 const app = require('express')(),
- { ApolloServer, gql } = require('apollo-server-express'),
- db =require('./server/models')
-// cors =  requuire('cors')
-
-const  typeDefs = require('./server/types'),
-    resolvers = require('./server/resolvers')
-
+ { ApolloServer } = require('apollo-server-express'),
+ db =require('./server/models'),
+ typeDefs = require('./server/types'),
+ resolvers = require('./server/resolvers')
+ 
 const server = new ApolloServer({
   typeDefs,
   resolvers,
   context:{db}
- 
 })
-
-
-
 
 server.applyMiddleware({ app })
 
