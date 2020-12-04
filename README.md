@@ -29,15 +29,7 @@ to run graphql API server
 ```bash
 npm run server
 ```
-after changing models make migration script
-```bash
-npm run makemigration
-```
 
-migrate models to alter tables
-```bash
-npm run migrate
-```
 open url in browser to GraphQL playground [http://localhost:4000/graphql](http://localhost:4000/graphql)
 <br>
 Run query to show.
@@ -51,3 +43,14 @@ Run query to show.
 }
 ```
 
+### Development
+
+after changing models make migration script
+```bash
+npm run makemigration
+```
+
+migrate models to alter tables
+```bash
+npm run migrate
+```
