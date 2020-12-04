@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "setup": "yarn dbcreate && yarn migrate && yarn seed ",
+    "setup": "npm run dbcreate && npm run migrate && npm run seed ",
     "dbcreate": "npx sequelize db:create",
     "migrate": "npx sequelize db:migrate",
     "makemigration": "node ./node_modules/sequelize-auto-migrations/bin/makemigration --name main",
