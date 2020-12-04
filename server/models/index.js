@@ -17,7 +17,7 @@ sequelize.authenticate().then(() => {
 }).catch(err => {
   console.error('Unable to connect to the database:', err.message)
 }).finally(() => {
-  sequelize.close()
+  //sequelize.close()
 })
 //console.log(sequelize)
 fs.readdirSync(__dirname)

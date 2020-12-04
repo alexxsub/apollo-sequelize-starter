@@ -1,0 +1,38 @@
+{
+    "tables": {
+        "Books": {
+            "tableName": "Books",
+            "schema": {
+                "id": {
+                    "primaryKey": true,
+                    "allowNull": false,
+                    "autoIncrement": true,
+                    "field": "id",
+                    "seqType": "Sequelize.INTEGER"
+                },
+                "title": {
+                    "allowNull": false,
+                    "field": "title",
+                    "seqType": "Sequelize.STRING"
+                },
+                "author": {
+                    "field": "author",
+                    "seqType": "Sequelize.STRING"
+                }
+            },
+            "indexes": {
+                "c84a7120e3e84448a5fa0fe206181d9b9a8b6d25": {
+                    "fields": [
+                        "title"
+                    ],
+                    "name": "books_title",
+                    "options": {
+                        "indexName": "books_title",
+                        "name": "books_title"
+                    }
+                }
+            }
+        }
+    },
+    "revision": 1
+}

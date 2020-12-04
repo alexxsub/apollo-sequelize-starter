@@ -1,7 +1,8 @@
 module.exports = {
     Query: {
-        Books: async (_, args, { books }) => {
-            return books
+        Books: async (_, args, { db }) => {
+    
+            return db.Books.findAll()
         }
     }
 }

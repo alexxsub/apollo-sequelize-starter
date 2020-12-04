@@ -7,9 +7,16 @@ module.exports = (sequelize, DataTypes) => {
       allowNull: false,
       autoIncrement: true
       },
-    title: DataTypes.STRING,
+    title: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
     author:DataTypes.STRING
-
+  }, {
+     indexes: [
+        { fields: [ 'title' ] }
+      ],
+    timestamps: false
   })
   return Books
 }
