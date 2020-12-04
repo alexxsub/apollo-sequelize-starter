@@ -1,4 +1,4 @@
-# <a href='https://graphql.org//'><img src='https://graphql.org/img/logo.svg' height='100' alt='GraphQL'></a>
+# <a href='https://graphql.org//'><img src='https://graphql.org/img/logo.svg' height='100' alt='GraphQL'><h1>GraphQL</h1></a>
 
 # Simple starter for Express graphql + sequilize 
 
