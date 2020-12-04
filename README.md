@@ -1,8 +1,8 @@
-# <a href='https://www.apollographql.com/'><img src='https://user-images.githubusercontent.com/841294/53402609-b97a2180-39ba-11e9-8100-812bab86357c.png' height='100' alt='Apollo Server'></a>
+# <a href='https://graphql.org//'><img src='https://graphql.org/img/logo.svg' height='100' alt='GraphQL'></a>
 
-# Simple starter for Apollo graphql + sequilize 
+# Simple starter for Express graphql + sequilize 
 
-Simple  Apollo+Express API GraphQL and ORM Sequilize PostgreSQL backend
+Simple  Express API GraphQL and ORM Sequilize PostgreSQL backend
 
 ## Clone src on your PC
 ```bash

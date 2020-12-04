@@ -1,17 +1,22 @@
 const app = require('express')(),
- { ApolloServer } = require('apollo-server-express'),
- db =require('./server/models'),
- typeDefs = require('./server/types'),
- resolvers = require('./server/resolvers')
- 
-const server = new ApolloServer({
-  typeDefs,
-  resolvers,
-  context:{db}
+    { graphqlHTTP } = require('express-graphql'),
+    db =require('./server/models'),
+    typeDefs = require('./server/types'),
+    resolvers = require('./server/resolvers');
+
+const { makeExecutableSchema } = require('@graphql-tools/schema');
+
+const schema = makeExecutableSchema({
+    typeDefs,
+    resolvers
 })
 
-server.applyMiddleware({ app })
+app.use('/graphql', graphqlHTTP({
+    schema,
+    context:{db},
+    graphiql: true,
+}));
 
-app.listen({ port: 4000 }, () =>
-  console.log(`🚀 Server ready at http://localhost:4000${server.graphqlPath}`)
-)
+app.listen(3000, () => {
+    console.info('Listening on http://localhost:3000/graphql')
+});
