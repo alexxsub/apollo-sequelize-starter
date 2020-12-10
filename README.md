@@ -9,7 +9,7 @@ Simple  Apollo+Express API GraphQL and ORM Sequilize PostgreSQL backend
 git clone https://github.com/alexxsub/apollo-sequelize-starter.git
 cd apollo-sequelize-starter
 ```
-## Install the dependencies
+## Install dependencies
 ```bash
 npm i
 ```
